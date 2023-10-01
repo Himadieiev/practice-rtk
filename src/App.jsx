@@ -1,4 +1,9 @@
+import React from "react";
+
+import Form from "./components/Form";
 import User from "./components/User";
+import TodoItem from "./components/TodoItem";
+import Posts from "./components/Posts";
 
 function App() {
   return (
@@ -11,9 +16,12 @@ function App() {
           </div>
           <div className="w-1/3">
             <h1 className="font-bold my-5">Redux Toolkit Todo App</h1>
+            <Form />
+            <TodoItem />
           </div>
           <div className="w-1/3">
             <h1 className="font-bold my-5">Redux Toolkit Async Thunk</h1>
+            <Posts />
           </div>
         </header>
       </div>
